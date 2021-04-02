@@ -1,0 +1,20 @@
+/code/sx/Yolo-Fastest/Yolo-Fastest/1295
+
+ ./darknet partial 1295/1295.cfg Yolo-Fastest/VOC/yolo-fastest.weights yolo-fastest.conv.109 109
+
+./darknet detector train 1295/1295.data 1295/1295.cfg yolo-fastest.conv.109
+
+
+
+
+/home/ipsg/anaconda3/envs/py36/bin/python3
+
+/home/ipsg/code/sx/streamax_obj
+
+/home/ipsg/code/sx/RFBNet-lj
+
+记得测试one stage里的，看withneg有无的差别，看voc正常数据集的结果是否正常，如果正常，表明数据集的问题
+
+
+vim ~/.bashrc
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/ipsg/install_file/TensorRT-7.0.0.11/lib
